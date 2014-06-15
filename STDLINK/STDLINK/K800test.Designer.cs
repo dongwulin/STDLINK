@@ -1,6 +1,6 @@
 ﻿namespace STDLINK
 {
-    partial class WL_K800test
+    partial class K800test
     {
         /// <summary>
         /// 必需的设计器变量。

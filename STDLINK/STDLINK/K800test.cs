@@ -15,10 +15,10 @@ using System.Windows.Forms;
 
 namespace STDLINK
 {
-    public partial class WL_K800test : Form
+    public partial class K800test : Form
     {
        
-        public WL_K800test()
+        public K800test()
         {
             InitializeComponent();
         }

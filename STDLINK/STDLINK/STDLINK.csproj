@@ -91,11 +91,11 @@
     </Compile>
     <Compile Include="G.cs" />
     <Compile Include="k800.cs" />
-    <Compile Include="WL_K800test.cs">
+    <Compile Include="K800test.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WL_K800test.Designer.cs">
-      <DependentUpon>WL_K800test.cs</DependentUpon>
+    <Compile Include="K800test.Designer.cs">
+      <DependentUpon>K800test.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BCset.resx">
@@ -118,9 +118,9 @@
       <DependentUpon>WL_ClockEdit.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="WL_K800test.resx">
+    <EmbeddedResource Include="K800test.resx">
       <SubType>Designer</SubType>
-      <DependentUpon>WL_K800test.cs</DependentUpon>
+      <DependentUpon>K800test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

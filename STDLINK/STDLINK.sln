@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STDLINK", "WL_STDLINK\STDLINK.csproj", "{D12E9713-3121-4B0C-BF90-A28940B74FC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STDLINK", "STDLINK\STDLINK.csproj", "{D12E9713-3121-4B0C-BF90-A28940B74FC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
