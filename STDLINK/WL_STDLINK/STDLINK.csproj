@@ -1,0 +1,210 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D12E9713-3121-4B0C-BF90-A28940B74FC5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>STDLINK</RootNamespace>
+    <AssemblyName>STDLINK</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <DocumentationFile>bin\Debug\STDLINK.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\download程序例子\C#+60种窗体皮肤\60种皮肤界面ssk文件\界面ssk\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BC.cs" />
+    <Compile Include="BCset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCset.Designer.cs">
+      <DependentUpon>BCset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IBC.cs" />
+    <Compile Include="WL_Clock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WL_Clock.Designer.cs">
+      <DependentUpon>WL_Clock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WL_ClockEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WL_ClockEdit.Designer.cs">
+      <DependentUpon>WL_ClockEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="WL_AddControls.cs">
+    </Compile>
+    <Compile Include="bButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="G.cs" />
+    <Compile Include="k800.cs" />
+    <Compile Include="WL_K800test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WL_K800test.Designer.cs">
+      <DependentUpon>WL_K800test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BCset.resx">
+      <DependentUpon>BCset.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WL_Clock.resx">
+      <DependentUpon>WL_Clock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WL_ClockEdit.resx">
+      <DependentUpon>WL_ClockEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WL_K800test.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WL_K800test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bGroupbox.resx">
+      <DependentUpon>bGroupbox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WL_Skin.resx">
+      <DependentUpon>WL_Skin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="bGroupbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="bGroupbox.designer.cs">
+      <DependentUpon>bGroupbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WL_Skin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WL_Skin.Designer.cs">
+      <DependentUpon>WL_Skin.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bc_logo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\girl.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttom.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gb_lb.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gb_lt.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gb_rb.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gb_rt.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\U2289P2DT20070726145959.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0080210070.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
